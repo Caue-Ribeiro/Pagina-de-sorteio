@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(180, 251, 63);
+    background: radial-gradient(
+        circle,
+        rgba(180, 251, 63, 1) 0%,
+        rgba(86, 180, 82, 1) 50%,
+        rgba(0, 0, 0, 1) 100%
+    );
+}
+@font-face {
+    font-family: Lucky;
+    src: url(./fonte/Happy\ Lucky\ Free.ttf);
+}
+
+@font-face {
+    font-family: Animated;
+    src: url(./fonte/Animated.ttf);
+}
+
+header {
+    margin: auto;
+    color: white;
+    font-family: "Lucky";
+    font-size: 50px;
+    background-color: rgb(73, 241, 143);
+    width: 400px;
+    text-align: center;
+    text-shadow: 5px 5px 15px black;
+    border-radius: 10px;
+    margin-top: 10%;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.input-sorteio {
+    border: none;
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 10px;
+    font-size: 25px;
+    text-align: center;
+    font-family: "Lucky";
+    background-color: white;
+}
+
+.button-add,
+.button-sortear {
+    appearance: none;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(99, 102, 101);
+    text-shadow: 2px 2px 15px rgb(131, 130, 130);
+}
+
+.button-add:hover {
+    background-color: #00c9a7;
+    transition: all 0.3s ease;
+    color: white;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.button-sortear {
+    font-family: "Lucky";
+    font-size: 25px;
+}
+
+.button-sortear:hover {
+    background-color: #fcfc26;
+    transition: all 0.3s ease;
+    color: white;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.list-names {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    list-style-position: inside;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.participant-names {
+    background-color: rgba(255, 255, 255, 0.452);
+    font-size: 30px;
+    font-family: "Animated";
+    border-radius: 10px;
+    min-width: 20%;
+    padding: 5px;
+    padding-left: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+#nome-sorteado {
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    text-shadow: 5px 5px 10px black;
+    font-size: 40px;
+    color: rgb(126, 126, 126);
+    font-family: "Animated";
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background-color: rgba(151, 151, 151, 0.13);
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    18.1%,
+    20%,
+    30%,
+    50%,
+    60%,
+    65%,
+    80%,
+    90%,
+    92% {
+        color: rgb(126, 126, 126);
+        text-shadow: none;
+    }
+
+    18.1%,
+    20%,
+    30%,
+    50%,
+    60%,
+    65%,
+    80%,
+    90%,
+    95%,
+    100% {
+        color: white;
+        text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
+            0 0 80px #03bcf4, 0 0 160px #03bcf4;
+    }
+}
